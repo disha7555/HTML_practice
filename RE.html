@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function teststring(str)
+			{
+			re=/[^[0-9]]/;
+			if(re.test(str))
+			{
+			alert("no digit");
+			}
+			else
+			{
+			alert("have");
+			}
+			}
+		</script>
+	</head>
+	<body>
+	<script type="text/javascript">
+	var input=prompt("give str"," ");
+	teststring(input);
+	</script>
+	</body>
+</html>

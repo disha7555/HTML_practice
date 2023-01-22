@@ -1,0 +1,13 @@
+<html>
+	<head>
+	</head>
+	press a key
+	<body onkeypress="fun(this,event)">
+	   <script>
+		function fun(obj,e)
+		{
+		obj.innerHTML="key pressed"+e.keyCode+" "+String.fromCharCode(e.keyCode);
+		}
+	   </script>
+	</body>
+</html>

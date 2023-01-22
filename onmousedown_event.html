@@ -1,0 +1,27 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			function fun(e)
+			{
+			switch (e.button)
+			{
+			case 0:
+			alert("left click");
+			break;
+			case 1:
+			alert("middle click");
+			break;
+			case 2:
+			alert("right click");
+			break;
+			}
+			}
+			
+		</script>
+	<div style="width:50%; height:30%;border=2px solid red;background-color:green" Onmousedown="fun(event,this)" >
+	this is div
+	</div>
+	</body>
+</html>

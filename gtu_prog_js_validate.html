@@ -1,0 +1,25 @@
+<html>
+	<body>
+		<script>
+			function validate()
+			{
+			x=document.forms["myform"]["tname"].value;
+			if(isNaN(x))
+			{
+			alert("textfield must be number");
+			return false;
+			
+			}
+			if(x<=0||x>10)
+			{
+			alert("textfield must be between 1 to 10");
+			return false;
+			}
+			}
+		</script>
+		<form name="myform" action="xyz3.html" method="get" Onsubmit="return validate()">
+			<input type="text" name="tname"/>
+			<input type="submit"/>
+		</form>
+	</body>
+</html>

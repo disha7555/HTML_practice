@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function teststring(str)
+			{
+			re=/[A-Za-z]/;
+			if(re.test(str))
+			{
+			alert("right");
+			}
+			else
+			{
+			alert("no");
+			}
+			}
+			function teststring1(str1)
+			{
+			re1=/^\d{10}$/;
+			if(re1.test(str1))
+			{
+			alert("right");
+			}
+			else
+			{
+			alert("no");
+			}
+			}
+		</script>
+	</head>
+	<body>
+	<script type="text/javascript">
+	var input=prompt("give name"," ");
+	teststring(input);
+	var input1=prompt("give mobile no"," ");
+	teststring1(input1);
+	</script>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+//give keycode for the key pressed
+<html>
+	<head>
+		<script>
+			function fun(e)
+			{
+				var h1=document.getElementbyId("h");
+				p1.innerHTML=e.keyCode;
+				var p1=document.getElementbyId("p1");
+				switch(e.keycode)
+				{
+					case 97:
+					p1.innerHTML="vowel pressed";
+					break;
+					case 65:
+					p1.innerHTML="vowel pressed";	
+					break;
+					case 101:
+					p1.innerHTML="vowel pressed";
+						break;
+					case 69:
+					p1.innerHTML="vowel pressed";
+						break;
+					case 105:
+					p1.innerHTML="vowel pressed";
+						break;
+					case 73:
+					p1.innerHTML="vowel pressed";
+						break;
+					case 111:
+					p1.innerHTML="vowel pressed";
+						break;
+					case 79:
+					p1.innerHTML="vowel pressed";
+						break;
+					case 117:
+					p1.innerHTML="vowel pressed";
+						break;
+					case 85:
+					p1.innerHTML="vowel pressed";
+						break;
+					default:
+					p1.innerHTML="no vowel pressed";
+				
+				}
+			}
+			function fun1(b)
+			{
+				b.bgColor="red";
+			}
+		</script>
+	</head>
+	<body onkeypress="fun(event)" onkeyup="fun1(this)">
+	<p id="p1"></p>
+	<p id="h"></p>
+	</body>
+</html>

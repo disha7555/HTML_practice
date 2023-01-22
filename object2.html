@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script type="text/javascript">
+		function divide(a,b,r)
+		{
+		this.a=a;
+		this.b=b;
+		this.r=r;
+		r=0;
+		while(a>=0)
+		{
+		c=a-b;
+		a=c;
+		r++;
+		}
+		document.write("ans: " +r);
+		}
+
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		b=new divide(15,3);
+		document.write(b.r);
+	</body>
+</html>

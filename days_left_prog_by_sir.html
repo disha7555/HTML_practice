@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script>
+			function daysdiff(date1,date2)
+			{
+			one_day=24*60*60*1000;
+			date1_ms=date1.getTime();
+			date2_ms=date2.getTime();
+			diff_ms=Math.abs(date1_ms-date2_ms);
+			return(diff_ms/one_day);
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			d1=new Date();
+			d2=new Date();
+			a=prompt("day");
+			b=prompt("month");
+			d1.setDate(a);
+			d1.setMonth(b);
+			document.write("no of days left: "+daysdiff(d1,d2));
+		</script>
+	</body>
+</html>
+			
+			

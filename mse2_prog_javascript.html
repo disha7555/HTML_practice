@@ -1,0 +1,60 @@
+//if mouse is over, heading color=>yellow
+//if mouse is out,  heading color=>black
+//if "Find time" button is clicked, then show time and date
+//if button named "red" is clicked, background color=>red
+//if button named "red" is clicked, background color=>green
+<html>
+	<head>
+		
+		<script type="text/javascript">
+			function fun1()
+			{	
+				var bid=document.getElementById("b");
+				bid.bgColor="red";
+				
+			}
+			function fun2()
+			{	
+				var bid=document.getElementById("b");
+				bid.bgColor="green";
+			}
+				
+			function t()
+			{
+				var time1=new Date();
+				document.getElementById("p").innerHTML=time1;
+			}
+			function mover()
+			{
+				var a=document.getElementById("h");
+				a.style.color="yellow";
+			}
+			function mout()
+			{
+				var a=document.getElementById("h");
+				a.style.color="black";
+			}
+		</script>
+		<body id="b">
+			<h1 id="h" onmouseover="mover()" onmouseout="mout()">This is heading</h1>
+			<p id="p"></p>
+			<input type="button" value="Find time" onclick="t()"/>
+			<input type="button" value="Red" onclick="fun1()" id="r"/>
+			<input type="button" value="Green" onclick="fun2()" id="g"/>
+		</body>
+	</head>
+</html>
+/*
+function fun(id)
+			{	
+				var bid=document.getElementById("b");
+				if(id.value=="Red")
+				{
+					bid.bgColor="red"
+				}
+				else
+				{
+					bid.bgColor="green"
+				}
+			}
+*/

@@ -1,0 +1,21 @@
+	body
+	{
+	///color:blue;
+	font-size:40px;
+	font-style:normal;
+	font-size:120%;
+	background-color:blue;
+	background-image:url("E:/my image/abcxyz.jpg");
+	background-size:50% 50%;
+	background-repeat:no-repeat;
+		}
+	
+	}
+	.arial{
+		font-family:Arial;
+		font-style:bold;
+	}
+	h1
+	{
+		font-size:120px;
+	}
